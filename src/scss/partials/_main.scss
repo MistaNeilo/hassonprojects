@@ -1,0 +1,43 @@
+.main-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/main-banner.jpg");
+  background-size: cover;
+  background-color: #FFF;
+}
+.main {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  .slogan {
+    background: #222;
+    color: #FFF;
+    .subheading-line {
+      background: $light-brand;
+    }
+  }
+  section {
+    padding: 60px 0;
+  }
+  .inline-blocks {
+    display: inline-block;
+    margin-left: 30px;
+    &.first {
+      margin-left: 0;
+    }
+  }
+  .capabilities {
+    background: url('../img/capabilities2.jpg') no-repeat;
+    background-size: cover;
+    color: #FFF;
+    ul {
+      margin: 20px 0 20px 20px;
+      padding: 0;
+      li {}
+    }
+    .subheading-line {
+      background: $light-brand;
+    }
+  }
+}

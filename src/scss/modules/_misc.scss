@@ -1,0 +1,24 @@
+::selection{
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+::-moz-selection{
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+::-webkit-selection{
+  background:#333;
+  color:#fff;
+  text-shadow:none;
+}
+
+.subheading-line {
+  width:100px;
+  background:$hasson-brand;
+  padding:1px;
+  margin:15px 0 20px;
+  display:block;
+  clear:both;
+}
