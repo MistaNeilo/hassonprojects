@@ -8,9 +8,15 @@ header {
     display:none;
     img {
       max-width: 150px;
+      @media(max-width: $screen-sm) {
+        width:100px;
+      }
     }
   }
   .navbar {
+    @media(max-width: $screen-sm) {
+      height:70px;
+    }
     color: #FFF;
     .navbar-nav {
       margin: 45px 0 0;
@@ -37,6 +43,9 @@ header {
       position: absolute;
       right: 15px;
       font-size: 22px;
+      @media (max-width:$screen-sm){
+        display:none;
+      }
       i {
         padding-right: 10px;
         &:last-child {
@@ -76,7 +85,13 @@ header {
       }
     }
 .social-media {
-  margin-top: 0px;
+  margin-top: 0;
 }
+  }
+  .navbar-toggle {
+    border:1px solid $hasson-brand;
+    .icon-bar {
+      background:$hasson-brand;
+    }
   }
 }

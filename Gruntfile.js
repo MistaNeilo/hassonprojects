@@ -120,18 +120,22 @@ module.exports = function (grunt) {
      * https://github.com/gruntjs/grunt-contrib-concat
      * Imports all .js files and appends project banner
      */
-    concat: {
-      dev: {
-        files: {
-          '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>'
-        }
+
+      concat: {
+          dev: {
+              src: ['<%= project.js %>'],
+              dest: '<%= project.assets %>/js/scripts.min.js'
+          },
+          vendor: {
+              src: ['src/components/bootstrap-sass/assets/javascripts/bootstrap.js', 'src/components//assets/waypoints/jquery.waypoints.js'],
+              dest: '<%= project.assets %>/js/vendor/vendor.min.js'
+          },
+          options: {
+              stripBanners: true,
+              nonull: true,
+              banner: '<%= tag.banner %>'
+          }
       },
-      options: {
-        stripBanners: true,
-        nonull: true,
-        banner: '<%= tag.banner %>'
-      }
-    },
 
     copy: {
       bsfonts: {
@@ -140,7 +144,7 @@ module.exports = function (grunt) {
         src: '**',
         dest: '<%= project.assets %>/fonts/bootstrap/',
         flatten: true,
-        filter: 'isFile',
+        filter: 'isFile'
       },
       fontawesome: {
         expand: true,
@@ -148,8 +152,8 @@ module.exports = function (grunt) {
         src: '**',
         dest: '<%= project.assets %>/fonts/',
         flatten: true,
-        filter: 'isFile',
-      },
+        filter: 'isFile'
+      }
     },
 
     /**
@@ -214,7 +218,7 @@ module.exports = function (grunt) {
     watch: {
       concat: {
         files: '<%= project.src %>/js/{,*/}*.js',
-        tasks: ['concat:dev', 'jshint']
+        tasks: ['concat:dev', 'concat:vendor', 'jshint']
       },
       sass: {
         files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
@@ -245,6 +249,7 @@ module.exports = function (grunt) {
     'copy:bsfonts',
     'copy:fontawesome',
     'concat:dev',
+    'concat:vendor',
     'connect:livereload',
     'open',
     'watch'
