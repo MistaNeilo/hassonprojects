@@ -1,4 +1,11 @@
 //----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+@import 'vendor/_external.scss';
+@import 'vendor/_flaticon.scss';
+
+//----------------------------------*\
 // SCSS MIXINS
 //----------------------------------*/
 
@@ -39,9 +46,3 @@
 // Enhancement modules
 @import 'modules/_breakpoints.scss';
 @import 'modules/_print.scss';
-
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';

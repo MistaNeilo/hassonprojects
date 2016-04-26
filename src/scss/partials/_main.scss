@@ -5,11 +5,34 @@
   background-image: url("../img/main-banner.jpg");
   background-size: cover;
   background-color: #FFF;
+  .slogan {
+    margin-top:25%;
+    color:#FFF;
+    h1 {
+      font-size: 4em;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #111;
+    }
+    p {
+      font-size: 1.4em;
+    max-width: 80%;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #333;
+    }
+  }
 }
 .main {
   position: absolute;
+  font-family: 'Cabin', sans-serif;
   top: 100%;
   width: 100%;
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+
   .slogan {
     background: #222;
     color: #FFF;
@@ -38,6 +61,31 @@
     }
     .subheading-line {
       background: $light-brand;
+    }
+  }
+  .services {
+    h2 {
+      text-transform: uppercase;
+      font-size:18px;
+      font-weight: 600;
+      color:#454c54;
+    }
+  }
+  .clients {
+    .thumbnail {
+    display: table-cell;
+    padding: 10px;
+    min-width: 200px;
+    height: 100px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    line-height: 1.42857;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
     }
   }
 }

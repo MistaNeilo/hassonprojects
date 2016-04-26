@@ -1,0 +1,29 @@
+.btn-hasson {
+  background:transparent;
+  border:2px solid $light-brand;
+  border-radius: 2px;
+  font-size: 0.9em;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color:#FFF;
+  transition:all 0.4s;
+  &:hover, &:active, &:visited, &:focus {
+    color:#FFf;
+    background: $light-brand;
+    }
+}
+
+.btn-banner {
+  background:$hasson-brand;
+  border:2px solid darken($hasson-brand, 2%);
+  border-radius: 2px;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color:#FFF;
+  transition:all 0.4s;
+  &:hover, &:active, &:visited, &:focus {
+    color:#FFF;
+    background: darken($hasson-brand, 2%);
+    }
+}

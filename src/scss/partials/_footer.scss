@@ -1,3 +1,65 @@
-.footer {
+.footer
+{
+	min-height: 326px;
+	color: #777;
+	padding:30px;
+	background-color: #111;
+	h3 {
+	font-family: Montserrat;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 20px;
+	}
+	p {
+		font-family: "PT Sans";
+	font-size: 13px;
+	color: #777;
+	margin-bottom: 20px;
+	}
+	ul li {
+		font-family: "PT Sans";
+	font-size: 13px;
+	color: #777;
+	}
+	.footer-contact-icons, .footer-contact {
+		list-style: none;
+		margin:0;
+		padding:0;
+		li {
+			line-height: 2em;
+		}
+	}
+	.useful-links {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			a {
+				color:#777;
+				line-height: 2em;
+			}
+		}
+	}
+}
 
+
+.copyright
+{
+	min-height: 67px;
+	background-color: #222;
+	border: solid 1px #333;
+	padding:25px 0;
+	a {
+		color:#FFF;
+	}
+	.right-links {
+		text-align: right;
+		a {
+			padding-right:15px;
+			&:last-child {
+				padding-right:0px;
+			}
+		}
+	}
 }

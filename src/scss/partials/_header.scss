@@ -13,11 +13,14 @@ header {
   .navbar {
     color: #FFF;
     .navbar-nav {
-      margin: 30px 0 0;
+      margin: 45px 0 0;
       > li > a {
         color: #FFF;
-        text-shadow: 1px 1px 1px #333;
-        font-size: 17px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+        font-size: 16px;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
         &:active,
         &:hover,
         &:visited {
@@ -30,10 +33,10 @@ header {
     position: relative;
     width: 100%;
     .social-media {
-      margin: 10px 0 0;
+      margin: 10px 0 10px;
       position: absolute;
       right: 15px;
-      font-size: 18px;
+      font-size: 22px;
       i {
         padding-right: 10px;
         &:last-child {
@@ -48,11 +51,11 @@ header {
       box-shadow: 1px 1px 1px #333;
     }
     .navbar {
-      color: #333;
+      color: #454c54;
       .navbar-nav {
         margin: 30px 0 0;
         > li > a {
-          color: #333;
+          color: #454c54;
           font-size: 15px;
           text-shadow: none;
           &:active,
@@ -62,7 +65,18 @@ header {
           }
         }
       }
+      i {
+        font-size: 18px;
+        &.facebook {
+          color:$facebook_color;
+        }
+        &.instagram {
+          color:$instagram_color;
+        }
+      }
     }
-
+.social-media {
+  margin-top: 0px;
+}
   }
 }
