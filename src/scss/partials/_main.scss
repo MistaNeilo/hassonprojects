@@ -74,6 +74,12 @@
   .clients {
     .thumbnail {
     display: table-cell;
+      @media (max-width: $screen-sm){
+        display:block;
+        margin-bottom: 30px;
+        height:auto;
+        padding:30px 0;
+      }
     padding: 10px;
     min-width: 200px;
     height: 100px;

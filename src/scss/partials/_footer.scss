@@ -55,6 +55,10 @@
 	}
 	.right-links {
 		text-align: right;
+        @media(max-width: $screen-xs) {
+          margin-top: 20px;
+          text-align: left;
+        }
 		a {
 			padding-right:15px;
 			&:last-child {

@@ -66,7 +66,6 @@ module.exports = function (grunt) {
         }
       }
    },
-
     /**
      * Project banner
      * Dynamically appended to CSS/JS files

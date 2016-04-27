@@ -63,6 +63,9 @@ header {
       color: #454c54;
       .navbar-nav {
         margin: 30px 0 0;
+        @media(max-width: $screen-sm) {
+          margin: 7.5px -15px;
+        }
         > li > a {
           color: #454c54;
           font-size: 15px;
@@ -89,9 +92,15 @@ header {
 }
   }
   .navbar-toggle {
-    border:1px solid $hasson-brand;
+    border:2px solid $hasson-brand;
+    margin-top:15px;
     .icon-bar {
       background:$hasson-brand;
+    }
+  }
+  .navbar-collapse {
+    @media(max-width:$screen-sm){
+      background:#FFF;
     }
   }
 }
